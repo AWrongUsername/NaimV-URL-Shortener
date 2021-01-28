@@ -21,6 +21,7 @@ function GenerateShortUUID($length, $conn) {
 }
 
 function AddURL($URL, $MadeBy, $conn) {
+
     $result = $conn->query("SELECT id, Url FROM urls");
 
     $uuid = '';
